@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\add_icon.png" />
+    <None Remove="Images\delete_icon.png" />
+    <None Remove="Images\edit_icon.png" />
+    <None Remove="Images\export_icon.png" />
+    <None Remove="Images\left_arrow_icon.png" />
+    <None Remove="Images\ok_icon.png" />
+    <None Remove="Images\right_arrow_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\add_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\delete_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\edit_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\export_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\left_arrow_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ok_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\right_arrow_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeesManagement.Common\EmployeesManagement.Common.csproj" />
+    <ProjectReference Include="..\EmployeesManagement.Infrastructure\EmployeesManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\EmployeesManagement.Service\EmployeesManagement.Service.csproj" />
+  </ItemGroup>
+
+</Project>
